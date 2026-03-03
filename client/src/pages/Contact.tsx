@@ -1,7 +1,8 @@
 // SPMP Solutions — Contact Page
 // Design: Raw Craft — American Vernacular Brutalism
+// Mobile-first: stacked layout, full-width form
 import { useEffect, useState } from "react";
-import { Phone, MapPin, Clock, Mail, CheckCircle, Send } from "lucide-react";
+import { Phone, MapPin, Clock, CheckCircle, Send } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { PHONE, PHONE_HREF, SERVICES, SERVICE_AREAS } from "@/lib/data";
@@ -20,7 +21,6 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, this would connect to a form backend
     setSubmitted(true);
   };
 
@@ -29,33 +29,33 @@ export default function Contact() {
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-28 pb-14 bg-[#1A1A1A]">
+      <section className="pt-24 sm:pt-28 pb-10 sm:pb-14 bg-[#1A1A1A]">
         <div className="container">
           <span className="section-label">Get in Touch</span>
           <span className="accent-rule my-3"></span>
-          <h1 className="font-display font-black text-5xl lg:text-7xl text-white uppercase leading-none mb-4">
+          <h1 className="font-display font-black text-[clamp(2.5rem,9vw,5rem)] text-white uppercase leading-none mb-4">
             Free Estimate.<br />
             <span className="text-[#E85D04]">No Obligation.</span>
           </h1>
-          <p className="font-body text-white/70 text-lg max-w-xl">
+          <p className="font-body text-white/70 text-base sm:text-lg max-w-xl">
             Call, text, or fill out the form below. We'll get back to you quickly with a transparent, honest quote for your project.
           </p>
         </div>
       </section>
 
       {/* Contact Content */}
-      <section className="py-16 lg:py-24">
+      <section className="py-12 sm:py-16 lg:py-24">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
             {/* Form */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-3 order-2 lg:order-1">
               {submitted ? (
-                <div className="bg-white border border-[#1A1A1A]/10 p-10 text-center">
+                <div className="bg-white border border-[#1A1A1A]/10 p-8 sm:p-10 text-center">
                   <CheckCircle size={48} className="text-[#E85D04] mx-auto mb-4" />
-                  <h2 className="font-display font-black text-3xl text-[#1A1A1A] uppercase mb-3">
+                  <h2 className="font-display font-black text-2xl sm:text-3xl text-[#1A1A1A] uppercase mb-3">
                     Message Received!
                   </h2>
-                  <p className="font-body text-[#1A1A1A]/70 mb-6">
+                  <p className="font-body text-[#1A1A1A]/70 mb-6 text-sm sm:text-base">
                     Thank you for reaching out. We'll review your request and get back to you shortly with a free estimate. For faster service, call or text us directly.
                   </p>
                   <a href={PHONE_HREF} className="btn-cta inline-flex">
@@ -64,12 +64,12 @@ export default function Contact() {
                   </a>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="bg-white border border-[#1A1A1A]/10 p-8">
-                  <h2 className="font-display font-black text-2xl text-[#1A1A1A] uppercase mb-6">
+                <form onSubmit={handleSubmit} className="bg-white border border-[#1A1A1A]/10 p-6 sm:p-8">
+                  <h2 className="font-display font-black text-xl sm:text-2xl text-[#1A1A1A] uppercase mb-6">
                     Request a Free Estimate
                   </h2>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4">
                     <div>
                       <label className="section-label block mb-2">Full Name *</label>
                       <input
@@ -79,7 +79,7 @@ export default function Contact() {
                         value={form.name}
                         onChange={handleChange}
                         placeholder="John Smith"
-                        className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] placeholder-[#1A1A1A]/40 focus:outline-none focus:border-[#E85D04] transition-colors"
+                        className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] placeholder-[#1A1A1A]/40 focus:outline-none focus:border-[#E85D04] transition-colors text-base"
                       />
                     </div>
                     <div>
@@ -91,7 +91,7 @@ export default function Contact() {
                         value={form.phone}
                         onChange={handleChange}
                         placeholder="501-555-0000"
-                        className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] placeholder-[#1A1A1A]/40 focus:outline-none focus:border-[#E85D04] transition-colors"
+                        className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] placeholder-[#1A1A1A]/40 focus:outline-none focus:border-[#E85D04] transition-colors text-base"
                       />
                     </div>
                   </div>
@@ -104,11 +104,11 @@ export default function Contact() {
                       value={form.email}
                       onChange={handleChange}
                       placeholder="john@example.com"
-                      className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] placeholder-[#1A1A1A]/40 focus:outline-none focus:border-[#E85D04] transition-colors"
+                      className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] placeholder-[#1A1A1A]/40 focus:outline-none focus:border-[#E85D04] transition-colors text-base"
                     />
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4">
                     <div>
                       <label className="section-label block mb-2">Service Needed *</label>
                       <select
@@ -116,7 +116,7 @@ export default function Contact() {
                         required
                         value={form.service}
                         onChange={handleChange}
-                        className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] focus:outline-none focus:border-[#E85D04] transition-colors"
+                        className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] focus:outline-none focus:border-[#E85D04] transition-colors text-base"
                       >
                         <option value="">Select a service...</option>
                         {SERVICES.map((s) => (
@@ -131,7 +131,7 @@ export default function Contact() {
                         required
                         value={form.area}
                         onChange={handleChange}
-                        className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] focus:outline-none focus:border-[#E85D04] transition-colors"
+                        className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] focus:outline-none focus:border-[#E85D04] transition-colors text-base"
                       >
                         <option value="">Select your city...</option>
                         {SERVICE_AREAS.map((a) => (
@@ -150,11 +150,11 @@ export default function Contact() {
                       onChange={handleChange}
                       rows={4}
                       placeholder="Tell us about your project — property size, what needs to be cleaned or painted, any specific concerns..."
-                      className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] placeholder-[#1A1A1A]/40 focus:outline-none focus:border-[#E85D04] transition-colors resize-none"
+                      className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] placeholder-[#1A1A1A]/40 focus:outline-none focus:border-[#E85D04] transition-colors resize-none text-base"
                     />
                   </div>
 
-                  <button type="submit" className="btn-cta w-full justify-center">
+                  <button type="submit" className="btn-cta w-full justify-center text-base sm:text-lg py-4">
                     <Send size={18} />
                     Send My Request
                   </button>
@@ -167,29 +167,29 @@ export default function Contact() {
             </div>
 
             {/* Contact Info Sidebar */}
-            <div className="lg:col-span-2 space-y-6">
+            <div className="lg:col-span-2 order-1 lg:order-2 space-y-4 sm:space-y-6">
               {/* Direct Contact */}
-              <div className="bg-[#1A1A1A] p-8">
-                <h3 className="font-display font-black text-2xl text-white uppercase mb-6">
+              <div className="bg-[#1A1A1A] p-6 sm:p-8">
+                <h3 className="font-display font-black text-xl sm:text-2xl text-white uppercase mb-5">
                   Contact Us<br />
                   <span className="text-[#E85D04]">Directly</span>
                 </h3>
-                <div className="space-y-5">
-                  <div className="flex items-start gap-4">
+                <div className="space-y-4 sm:space-y-5">
+                  <div className="flex items-start gap-3 sm:gap-4">
                     <div className="w-10 h-10 bg-[#E85D04] rounded-sm flex items-center justify-center flex-shrink-0">
-                      <Phone size={18} className="text-white" />
+                      <Phone size={17} className="text-white" />
                     </div>
                     <div>
                       <p className="section-label mb-1">Phone / Text</p>
-                      <a href={PHONE_HREF} className="font-display font-bold text-xl text-white hover:text-[#E85D04] transition-colors">
+                      <a href={PHONE_HREF} className="font-display font-bold text-lg sm:text-xl text-white hover:text-[#E85D04] transition-colors">
                         {PHONE}
                       </a>
                       <p className="font-ui text-white/50 text-xs mt-0.5">Call or text anytime</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-3 sm:gap-4">
                     <div className="w-10 h-10 bg-[#E85D04] rounded-sm flex items-center justify-center flex-shrink-0">
-                      <MapPin size={18} className="text-white" />
+                      <MapPin size={17} className="text-white" />
                     </div>
                     <div>
                       <p className="section-label mb-1">Service Area</p>
@@ -197,9 +197,9 @@ export default function Contact() {
                       <p className="font-ui text-white/50 text-xs mt-0.5">Benton, Bryant, Cabot, Maumelle, Sherwood, Conway</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-3 sm:gap-4">
                     <div className="w-10 h-10 bg-[#E85D04] rounded-sm flex items-center justify-center flex-shrink-0">
-                      <Clock size={18} className="text-white" />
+                      <Clock size={17} className="text-white" />
                     </div>
                     <div>
                       <p className="section-label mb-1">Hours</p>
@@ -212,8 +212,8 @@ export default function Contact() {
               </div>
 
               {/* What to Expect */}
-              <div className="bg-white border border-[#1A1A1A]/10 p-6">
-                <h3 className="font-display font-bold text-lg text-[#1A1A1A] uppercase tracking-wide mb-4">
+              <div className="bg-white border border-[#1A1A1A]/10 p-5 sm:p-6">
+                <h3 className="font-display font-bold text-base sm:text-lg text-[#1A1A1A] uppercase tracking-wide mb-4">
                   What to Expect
                 </h3>
                 <div className="space-y-3">
@@ -235,8 +235,8 @@ export default function Contact() {
               </div>
 
               {/* Trust Signals */}
-              <div className="bg-[#E85D04] p-6">
-                <h3 className="font-display font-bold text-lg text-white uppercase tracking-wide mb-3">
+              <div className="bg-[#E85D04] p-5 sm:p-6">
+                <h3 className="font-display font-bold text-base sm:text-lg text-white uppercase tracking-wide mb-3">
                   Our Promise
                 </h3>
                 <ul className="space-y-2">
@@ -252,6 +252,9 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
+      {/* Mobile bottom padding for sticky CTA */}
+      <div className="lg:hidden h-16" />
 
       <Footer />
     </div>
