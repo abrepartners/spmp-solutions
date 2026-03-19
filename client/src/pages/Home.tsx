@@ -423,7 +423,7 @@ export default function Home() {
                 Crew.
               </h2>
               <p className="font-body text-[#1A1A1A]/70 leading-relaxed mb-4 text-sm sm:text-base">
-                Samsonite Painting &amp; More Pressure Washing is a locally owned and operated company committed to delivering high-quality exterior services to the Little Rock community. We take pride in providing reliable, affordable, and professional results for both residential and commercial clients.
+                Samsonite Painting &amp; More Pressure Washing is a professional exterior services company serving residential, commercial, and multi‑property clients across Little Rock and the greater Central Arkansas region. Since 2018, we have focused on delivering consistent quality, reliable communication, and results that protect and enhance every property we service.
               </p>
               <p className="font-body text-[#1A1A1A]/70 leading-relaxed mb-7 text-sm sm:text-base">
                 Our mission is simple: <strong className="text-[#1A1A1A]">Protect, restore, and enhance every property we work on.</strong> With years of hands-on experience, we understand the importance of doing the job right the first time.

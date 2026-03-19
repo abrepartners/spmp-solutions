@@ -61,13 +61,13 @@ export default function About() {
                 &amp; <span className="text-[#E85D04]">Honest Service.</span>
               </h2>
               <p className="font-body text-[#1A1A1A]/70 leading-relaxed mb-4 text-sm sm:text-base">
-                Samsonite Painting &amp; More Pressure Washing was founded with a simple mission: provide Little Rock homeowners and businesses with professional exterior services at honest prices. We're your neighbors, and we treat every property we work on with the same care we'd give our own.
+                Samsonite Painting &amp; More Pressure Washing is a professional exterior services company serving residential, commercial, and multi‑property clients across Little Rock, North Little Rock, Sherwood, Cabot, and the greater Central Arkansas region. Since 2018, we have focused on delivering consistent quality, reliable communication, and results that enhance the appearance, longevity, and value of every property we service.
               </p>
               <p className="font-body text-[#1A1A1A]/70 leading-relaxed mb-4 text-sm sm:text-base">
-                From pressure washing and roof cleaning to exterior painting and junk removal, we've built our reputation on showing up on time, communicating clearly, and delivering results that exceed expectations. We don't cut corners, and we don't pad invoices.
+                Our company was established to raise the standard of professionalism in the painting and pressure washing industry. What began as a small operation has evolved into a structured, process‑driven service provider trusted by homeowners, business owners, and property managers who expect dependable execution and long‑lasting results.
               </p>
               <p className="font-body text-[#1A1A1A]/70 leading-relaxed mb-7 text-sm sm:text-base">
-                Over the years, we've completed hundreds of projects throughout Little Rock, North Little Rock, Benton, Bryant, and surrounding communities. Every job — big or small — gets our full attention and best work.
+                Today, Samsonite operates with a clear commitment to excellence, accountability, and customer confidence. Every job — big or small — gets our full attention and best work.
               </p>
               <a href={PHONE_HREF} className="btn-cta inline-flex">
                 <Phone size={18} />

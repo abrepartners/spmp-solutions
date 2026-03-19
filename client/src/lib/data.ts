@@ -47,6 +47,33 @@ export const TEAM_IMAGE = "https://images.unsplash.com/photo-1558618666-fcd25c85
 
 export const SERVICES: Service[] = [
   {
+    slug: "exterior-interior-painting",
+    name: "Exterior & Interior Painting",
+    shortName: "Painting",
+    tagline: "Transform your property with a fresh coat",
+    description: "Professional exterior and interior painting services in Little Rock, AR. Quality workmanship, premium paints, and lasting results.",
+    longDescription: "A fresh coat of paint is one of the most cost-effective ways to transform your property. Our professional painting team delivers meticulous prep work, clean lines, and lasting results using premium paints and materials. Whether you're refreshing your home's exterior, updating interior rooms, or painting a commercial space, we bring the same level of care and attention to every project.",
+    benefits: [
+      "Premium paints for lasting results",
+      "Meticulous surface prep and priming",
+      "Clean, sharp lines and professional finish",
+      "Interior and exterior capabilities",
+      "Residential and commercial projects"
+    ],
+    process: [
+      { step: "Color Consultation", description: "We help you choose the right colors and finishes for your project." },
+      { step: "Surface Preparation", description: "Thorough cleaning, sanding, priming, and caulking for a lasting finish." },
+      { step: "Professional Application", description: "Multiple coats applied with professional tools for even coverage." },
+      { step: "Final Walkthrough", description: "We inspect every detail and touch up anything that doesn't meet our standards." }
+    ],
+    faqs: [
+      { question: "Do you paint both interior and exterior?", answer: "Yes. We handle both interior and exterior painting for residential and commercial properties throughout the Little Rock area." },
+      { question: "What brands of paint do you use?", answer: "We use premium paints from trusted brands like Sherwin-Williams and Benjamin Moore. We can also work with paint you've already purchased if preferred." },
+      { question: "How long does exterior painting take?", answer: "Most residential exterior painting projects take 2–5 days depending on the size of the home, number of stories, and complexity of the trim work. We'll give you a timeline estimate with your quote." }
+    ],
+    icon: "🎨"
+  },
+  {
     slug: "pressure-washing",
     name: "Pressure Washing",
     shortName: "Pressure Washing",
@@ -99,6 +126,33 @@ export const SERVICES: Service[] = [
       { question: "How long does house washing take?", answer: "Most residential homes take 2–4 hours depending on size. We'll give you a time estimate when we provide your free quote." }
     ],
     icon: "🏠"
+  },
+  {
+    slug: "commercial-pressure-washing",
+    name: "Commercial Pressure Washing",
+    shortName: "Commercial",
+    tagline: "Keep your business looking its best",
+    description: "Professional commercial pressure washing in Little Rock, AR. Storefronts, parking lots, sidewalks, and commercial properties.",
+    longDescription: "First impressions matter in business. A clean exterior communicates professionalism and pride to your customers. Our commercial pressure washing services cover everything from retail storefronts and restaurant exteriors to parking garages, loading docks, and commercial properties of all sizes. We work around your schedule to minimize disruption to your business.",
+    benefits: [
+      "Improves customer first impressions",
+      "Removes graffiti and gum",
+      "Cleans parking lots and loading docks",
+      "Flexible scheduling to minimize disruption",
+      "Handles large commercial properties"
+    ],
+    process: [
+      { step: "Site Assessment", description: "We evaluate the scope of work and identify any special requirements." },
+      { step: "Schedule Planning", description: "We work around your business hours to minimize disruption." },
+      { step: "Commercial Cleaning", description: "Our commercial-grade equipment handles large areas efficiently." },
+      { step: "Quality Check", description: "We ensure all areas meet our commercial quality standards." }
+    ],
+    faqs: [
+      { question: "Do you offer commercial pressure washing contracts?", answer: "Yes. We offer recurring maintenance contracts for commercial properties that need regular cleaning. Contact us to discuss a maintenance schedule that works for your business." },
+      { question: "Can you clean a parking lot or parking garage?", answer: "Yes. We have the equipment to handle large commercial surfaces including parking lots, parking garages, loading docks, and drive-throughs." },
+      { question: "Do you work after business hours?", answer: "Yes. We can schedule commercial cleaning early morning, evenings, or weekends to minimize disruption to your business operations." }
+    ],
+    icon: "🏢"
   },
   {
     slug: "roof-cleaning",
@@ -209,60 +263,6 @@ export const SERVICES: Service[] = [
     icon: "🌲"
   },
   {
-    slug: "commercial-pressure-washing",
-    name: "Commercial Pressure Washing",
-    shortName: "Commercial",
-    tagline: "Keep your business looking its best",
-    description: "Professional commercial pressure washing in Little Rock, AR. Storefronts, parking lots, sidewalks, and commercial properties.",
-    longDescription: "First impressions matter in business. A clean exterior communicates professionalism and pride to your customers. Our commercial pressure washing services cover everything from retail storefronts and restaurant exteriors to parking garages, loading docks, and commercial properties of all sizes. We work around your schedule to minimize disruption to your business.",
-    benefits: [
-      "Improves customer first impressions",
-      "Removes graffiti and gum",
-      "Cleans parking lots and loading docks",
-      "Flexible scheduling to minimize disruption",
-      "Handles large commercial properties"
-    ],
-    process: [
-      { step: "Site Assessment", description: "We evaluate the scope of work and identify any special requirements." },
-      { step: "Schedule Planning", description: "We work around your business hours to minimize disruption." },
-      { step: "Commercial Cleaning", description: "Our commercial-grade equipment handles large areas efficiently." },
-      { step: "Quality Check", description: "We ensure all areas meet our commercial quality standards." }
-    ],
-    faqs: [
-      { question: "Do you offer commercial pressure washing contracts?", answer: "Yes. We offer recurring maintenance contracts for commercial properties that need regular cleaning. Contact us to discuss a maintenance schedule that works for your business." },
-      { question: "Can you clean a parking lot or parking garage?", answer: "Yes. We have the equipment to handle large commercial surfaces including parking lots, parking garages, loading docks, and drive-throughs." },
-      { question: "Do you work after business hours?", answer: "Yes. We can schedule commercial cleaning early morning, evenings, or weekends to minimize disruption to your business operations." }
-    ],
-    icon: "🏢"
-  },
-  {
-    slug: "exterior-interior-painting",
-    name: "Exterior & Interior Painting",
-    shortName: "Painting",
-    tagline: "Transform your property with a fresh coat",
-    description: "Professional exterior and interior painting services in Little Rock, AR. Quality workmanship, premium paints, and lasting results.",
-    longDescription: "A fresh coat of paint is one of the most cost-effective ways to transform your property. Our professional painting team delivers meticulous prep work, clean lines, and lasting results using premium paints and materials. Whether you're refreshing your home's exterior, updating interior rooms, or painting a commercial space, we bring the same level of care and attention to every project.",
-    benefits: [
-      "Premium paints for lasting results",
-      "Meticulous surface prep and priming",
-      "Clean, sharp lines and professional finish",
-      "Interior and exterior capabilities",
-      "Residential and commercial projects"
-    ],
-    process: [
-      { step: "Color Consultation", description: "We help you choose the right colors and finishes for your project." },
-      { step: "Surface Preparation", description: "Thorough cleaning, sanding, priming, and caulking for a lasting finish." },
-      { step: "Professional Application", description: "Multiple coats applied with professional tools for even coverage." },
-      { step: "Final Walkthrough", description: "We inspect every detail and touch up anything that doesn't meet our standards." }
-    ],
-    faqs: [
-      { question: "Do you paint both interior and exterior?", answer: "Yes. We handle both interior and exterior painting for residential and commercial properties throughout the Little Rock area." },
-      { question: "What brands of paint do you use?", answer: "We use premium paints from trusted brands like Sherwin-Williams and Benjamin Moore. We can also work with paint you've already purchased if preferred." },
-      { question: "How long does exterior painting take?", answer: "Most residential exterior painting projects take 2–5 days depending on the size of the home, number of stories, and complexity of the trim work. We'll give you a timeline estimate with your quote." }
-    ],
-    icon: "🎨"
-  },
-  {
     slug: "junk-removal",
     name: "Junk Removal & Property Maintenance",
     shortName: "Junk Removal",
@@ -335,6 +335,12 @@ export const SERVICE_AREAS: ServiceArea[] = [
     city: "Sherwood",
     state: "AR",
     description: "Serving Sherwood and surrounding communities with professional exterior cleaning, painting, and property maintenance.",
+  },
+  {
+    slug: "jacksonville",
+    city: "Jacksonville",
+    state: "AR",
+    description: "Jacksonville residents and businesses trust SPMP Solutions for professional pressure washing, painting, and property maintenance services.",
   },
   {
     slug: "conway",
