@@ -29,6 +29,8 @@ export default function ServicePage() {
           <img
             src={HERO_IMAGE}
             alt={`${service.name} in Little Rock, AR`}
+            width={1200}
+            height={800}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a1a2f] via-[#0a1a2f]/70 to-[#0a1a2f]/40" />

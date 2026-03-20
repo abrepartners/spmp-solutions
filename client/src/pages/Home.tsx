@@ -28,6 +28,8 @@ export default function Home() {
           <img
             src={HERO_IMAGE}
             alt="Professional pressure washing crew working on a home in Little Rock, AR"
+            width={1200}
+            height={800}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a1a2f] via-[#0a1a2f]/60 to-transparent" />
@@ -149,6 +151,9 @@ export default function Home() {
                 <img
                   src={BEFORE_AFTER_IMAGE}
                   alt="Before and after driveway pressure washing in Little Rock, AR"
+                  width={1200}
+                  height={800}
+                  loading="lazy"
                   className="w-full h-64 sm:h-80 lg:h-[500px] object-cover"
                 />
                 <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 bg-[#f2a900] p-4 sm:p-6">
@@ -270,6 +275,9 @@ export default function Home() {
             <img
               src={PAINTING_IMAGE}
               alt="Professional exterior painting service in Little Rock, AR"
+              width={1200}
+              height={800}
+              loading="lazy"
               className="w-full h-full object-cover"
             />
           </div>
@@ -436,6 +444,9 @@ export default function Home() {
               <img
                 src={TEAM_IMAGE}
                 alt="The SPMP Solutions team in Little Rock, AR"
+                width={1200}
+                height={800}
+                loading="lazy"
                 className="w-full h-64 sm:h-80 lg:h-[480px] object-cover"
               />
               <div className="absolute -bottom-3 -left-3 sm:-bottom-4 sm:-left-4 bg-[#0a1a2f] p-4 sm:p-5">

@@ -48,6 +48,8 @@ export const DECK_WASH_IMAGE = "https://lh3.googleusercontent.com/d/1IIRH-QX6TJp
 export const GUTTER_CLEANING_IMAGE = "https://lh3.googleusercontent.com/d/1svvHTRbw9BV2MX4r1GiglQJBO2dHOang=w1200";
 export const SURFACE_NLR_IMAGE = "https://lh3.googleusercontent.com/d/1ATD9iz-mZM8zrOTZ0s7puWknVpw5k4Dw=w1200";
 export const BRICK_CHIMNEY_IMAGE = "https://lh3.googleusercontent.com/d/1EVDUCUy6GVfZq0QlwJIZfaCffwQx632F=w1200";
+export const LOGO_IMAGE = "https://lh3.googleusercontent.com/d/1uOlPM5Mi88DdcbXxxG5Jlz6xAIooNv9i=w800";
+export const OG_IMAGE = "https://lh3.googleusercontent.com/d/1RKPL56xc-I92kd7z_rTTTvaUVZgYtAVp=w1200";
 
 export const SERVICES: Service[] = [
   {

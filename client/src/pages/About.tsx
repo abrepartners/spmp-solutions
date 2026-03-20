@@ -18,7 +18,7 @@ export default function About() {
       {/* Hero */}
       <section className="relative pt-16 min-h-[50vh] sm:min-h-[55vh] flex items-end pb-10 sm:pb-14 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={TEAM_IMAGE} alt="The SPMP Solutions team in Little Rock, AR" className="w-full h-full object-cover" />
+          <img src={TEAM_IMAGE} alt="The SPMP Solutions team in Little Rock, AR" width={1200} height={800} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a1a2f] via-[#0a1a2f]/60 to-[#0a1a2f]/30" />
         </div>
         <div className="container relative z-10">
@@ -78,6 +78,9 @@ export default function About() {
               <img
                 src={PAINTING_IMAGE}
                 alt="Professional exterior painting in Little Rock, AR"
+                width={1200}
+                height={800}
+                loading="lazy"
                 className="w-full h-64 sm:h-80 lg:h-[500px] object-cover"
               />
               <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 bg-[#f2a900] p-4 sm:p-6">
