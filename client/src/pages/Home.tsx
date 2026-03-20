@@ -157,8 +157,8 @@ export default function Home() {
                   className="w-full h-64 sm:h-80 lg:h-[500px] object-cover"
                 />
                 <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 bg-[#f2a900] p-4 sm:p-6">
-                  <div className="font-display font-black text-white text-3xl sm:text-4xl">500+</div>
-                  <div className="font-ui text-white/80 text-xs sm:text-sm uppercase tracking-wider">Jobs Completed</div>
+                  <div className="font-display font-black text-white text-3xl sm:text-4xl">5.0★</div>
+                  <div className="font-ui text-white/80 text-xs sm:text-sm uppercase tracking-wider">138+ Google Reviews</div>
                 </div>
               </div>
             </div>
@@ -227,6 +227,17 @@ export default function Home() {
               Real Results.<br />
               <span className="text-[#f2a900]">Real Reviews.</span>
             </h2>
+            {/* Google Rating Badge */}
+            <div className="inline-flex items-center gap-2 mt-4 bg-white border border-[#0a1a2f]/10 px-4 py-2 rounded-sm">
+              <div className="flex gap-0.5">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} size={14} className="text-[#f2a900] fill-[#f2a900]" />
+                ))}
+              </div>
+              <span className="font-display font-bold text-sm text-[#0a1a2f]">5.0</span>
+              <span className="text-[#0a1a2f]/50 text-xs font-ui">|</span>
+              <span className="font-ui text-xs text-[#0a1a2f]/60">138+ Google Reviews</span>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">

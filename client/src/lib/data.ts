@@ -358,6 +358,55 @@ export const SERVICE_AREAS: ServiceArea[] = [
 
 export const TESTIMONIALS: Testimonial[] = [
   {
+    name: "Karen M.",
+    city: "Little Rock, AR",
+    rating: 5,
+    text: "Our office looks brand new. Samsonite is worth every penny. The team was professional from start to finish and the results speak for themselves. We'll be using them for all our commercial properties.",
+    service: "Commercial Pressure Washing",
+    date: "2024"
+  },
+  {
+    name: "Tyrone B.",
+    city: "Benton, AR",
+    rating: 5,
+    text: "Our house went from dull to stunning in 1 day. The crew showed up on time, worked efficiently, and left the place spotless. Best money we've spent on our home in years. Highly recommend to anyone.",
+    service: "House Washing",
+    date: "2024"
+  },
+  {
+    name: "Emily J.",
+    city: "Conway, AR",
+    rating: 5,
+    text: "The best experience I've ever had with a service company. CJ kept me apprised of their schedule, was timely, efficient, and personable. Professional, respectful, on time — honest and caring people. I have zero complaints!",
+    service: "Exterior Painting",
+    date: "2025"
+  },
+  {
+    name: "Sarah D.",
+    city: "Sherwood, AR",
+    rating: 5,
+    text: "CJ and Shirley were amazing! They responded quickly, did a wonderful job cleaning our gutters, and were some of the kindest people we've ever met. CJ explained everything upfront and the cost was very fair.",
+    service: "Gutter Cleaning",
+    date: "2025"
+  },
+  {
+    name: "Michael R.",
+    city: "Jacksonville, AR",
+    rating: 5,
+    text: "CJ did a tremendous job cleaning our clogged gutters and clearing the drain pipes for maximum water flow. He explained what he was going to do and the cost up front. Professional and thorough — exactly what we needed.",
+    service: "Gutter Cleaning",
+    date: "2024"
+  },
+  {
+    name: "Patricia L.",
+    city: "North Little Rock, AR",
+    rating: 5,
+    text: "Johnson did an outstanding job cleaning our awning and power washing our walkway. The difference is night and day. They have the equipment, the expertise, and the work ethic. We've already recommended them to our neighbors.",
+    service: "Pressure Washing",
+    date: "2025"
+  }
+];= [
+  {
     name: "Marcus T.",
     city: "Little Rock",
     rating: 5,
@@ -408,8 +457,8 @@ export const TESTIMONIALS: Testimonial[] = [
 ];
 
 export const STATS = [
-  { value: "500+", label: "Jobs Completed" },
-  { value: "5★", label: "Average Rating" },
+  { value: "138+", label: "5-Star Reviews" },
+  { value: "5.0★", label: "Google Rating" },
   { value: "8+", label: "Cities Served" },
   { value: "100%", label: "Satisfaction Guarantee" }
 ];
