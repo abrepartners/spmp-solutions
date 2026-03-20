@@ -40,10 +40,14 @@ export const SHORT_NAME = "SPMP Solutions";
 export const TAGLINE = "Protect. Restore. Enhance.";
 export const LOCATION = "Little Rock, AR";
 
-export const HERO_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663139541485/HGyLKmSMhiCuYTQPTrWxjz/hero-pressure-washing-XFyGfv6nQ7dXKm9FXt7HmN.webp";
-export const PAINTING_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663139541485/HGyLKmSMhiCuYTQPTrWxjz/hero-painting-XUm4crBEYLpSRSRPJHMb7R.webp";
-export const BEFORE_AFTER_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663139541485/HGyLKmSMhiCuYTQPTrWxjz/before-after-driveway-jjxSKNfM885GJLmz33TAsx.webp";
-export const TEAM_IMAGE = "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80";
+export const HERO_IMAGE = "https://lh3.googleusercontent.com/d/1RKPL56xc-I92kd7z_rTTTvaUVZgYtAVp=w1200";
+export const PAINTING_IMAGE = "https://lh3.googleusercontent.com/d/1DhMvMYBx_kn65O0-Fg7zLv2SWOJ3dQET=w1200";
+export const BEFORE_AFTER_IMAGE = "https://lh3.googleusercontent.com/d/1MijO-33dBfdZaAQzNl37ri0C6n9ZrdG6=w1200";
+export const TEAM_IMAGE = "https://lh3.googleusercontent.com/d/1BrIXut3jAU4xROIRMqLs58FAAuR8AJFO=w1200";
+export const DECK_WASH_IMAGE = "https://lh3.googleusercontent.com/d/1IIRH-QX6TJpQ3IYQoV5TgIo9mc4Ge12n=w1200";
+export const GUTTER_CLEANING_IMAGE = "https://lh3.googleusercontent.com/d/1svvHTRbw9BV2MX4r1GiglQJBO2dHOang=w1200";
+export const SURFACE_NLR_IMAGE = "https://lh3.googleusercontent.com/d/1ATD9iz-mZM8zrOTZ0s7puWknVpw5k4Dw=w1200";
+export const BRICK_CHIMNEY_IMAGE = "https://lh3.googleusercontent.com/d/1EVDUCUy6GVfZq0QlwJIZfaCffwQx632F=w1200";
 
 export const SERVICES: Service[] = [
   {

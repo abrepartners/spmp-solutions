@@ -6,60 +6,76 @@ import { Link } from "wouter";
 import { Phone, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { PHONE, PHONE_HREF, BEFORE_AFTER_IMAGE, HERO_IMAGE, PAINTING_IMAGE, TEAM_IMAGE } from "@/lib/data";
+import { PHONE, PHONE_HREF, BEFORE_AFTER_IMAGE, HERO_IMAGE, PAINTING_IMAGE, TEAM_IMAGE, DECK_WASH_IMAGE, GUTTER_CLEANING_IMAGE, SURFACE_NLR_IMAGE, BRICK_CHIMNEY_IMAGE } from "@/lib/data";
 
 const galleryItems = [
   {
     id: 1,
-    title: "Driveway Pressure Washing",
-    location: "Little Rock, AR",
+    title: "Concrete Steps & Driveway Cleaning",
+    location: "Sherwood, AR",
     service: "Driveway Cleaning",
     image: BEFORE_AFTER_IMAGE,
-    description: "Complete driveway restoration — removed years of algae, oil stains, and embedded grime."
+    description: "Before & after — concrete steps and driveway restored to like-new condition, removing years of buildup."
   },
   {
     id: 2,
-    title: "Residential Pressure Washing",
-    location: "Chenal Valley, Little Rock",
+    title: "House Wash — Full Exterior",
+    location: "Roland, AR",
     service: "House Washing",
     image: HERO_IMAGE,
-    description: "Full exterior house washing — siding, driveway, and walkways restored to like-new condition."
+    description: "Complete exterior house wash — algae and grime removed from siding, restoring the home's curb appeal."
   },
   {
     id: 3,
-    title: "Exterior House Painting",
-    location: "Hillcrest, Little Rock",
+    title: "Driveway & Garage Door Painting",
+    location: "Conway, AR",
     service: "Exterior Painting",
     image: PAINTING_IMAGE,
-    description: "Complete exterior repaint with premium Sherwin-Williams paint. Meticulous prep and clean lines."
+    description: "Dramatic driveway pressure wash and garage door painting transformation. Night and day difference."
   },
   {
     id: 4,
-    title: "Team on the Job",
-    location: "Little Rock Metro Area",
+    title: "Commercial Lot Cleaning",
+    location: "Little Rock, AR",
     service: "Commercial Washing",
     image: TEAM_IMAGE,
-    description: "Our professional crew ready to deliver quality results on every project."
+    description: "Commercial property pressure washing — building exterior, parking area, and walkways cleaned."
   },
   {
     id: 5,
-    title: "Commercial Pressure Washing",
-    location: "North Little Rock, AR",
-    service: "Commercial Washing",
-    image: HERO_IMAGE,
-    description: "Large commercial property exterior cleaning — building facade, parking areas, and walkways."
+    title: "Deck Washing & Restoration",
+    location: "Sherwood, AR",
+    service: "House Washing",
+    image: DECK_WASH_IMAGE,
+    description: "Deck pressure washing to remove weathering, mildew, and embedded dirt — ready for staining or sealing."
   },
   {
     id: 6,
-    title: "Roof Soft Washing",
-    location: "Benton, AR",
+    title: "Gutter Cleaning",
+    location: "Sherwood, AR",
     service: "Roof Cleaning",
-    image: BEFORE_AFTER_IMAGE,
-    description: "Roof soft-wash treatment — eliminated black streaks and algae growth safely without shingle damage."
+    image: GUTTER_CLEANING_IMAGE,
+    description: "Professional gutter cleaning — debris removed and gutters restored for proper drainage."
+  },
+  {
+    id: 7,
+    title: "Surface Cleaning — Concrete",
+    location: "North Little Rock, AR",
+    service: "Driveway Cleaning",
+    image: SURFACE_NLR_IMAGE,
+    description: "Concrete surface cleaning — oil stains, algae, and grime blasted away for a fresh, clean look."
+  },
+  {
+    id: 8,
+    title: "Brick & Chimney Cleaning",
+    location: "Little Rock, AR",
+    service: "House Washing",
+    image: BRICK_CHIMNEY_IMAGE,
+    description: "Brick and chimney exterior cleaning — soot, stains, and buildup removed safely without damage."
   }
 ];
 
-const filters = ["All", "House Washing", "Driveway Cleaning", "Exterior Painting", "Roof Cleaning", "Commercial Washing"];
+const filters = ["All", "House Washing", "Driveway Cleaning", "Exterior Painting", "Roof Cleaning", "Commercial Washing", "Deck Cleaning"];
 
 export default function Gallery() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
