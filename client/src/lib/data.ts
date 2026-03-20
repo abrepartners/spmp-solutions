@@ -405,55 +405,6 @@ export const TESTIMONIALS: Testimonial[] = [
     service: "Pressure Washing",
     date: "2025"
   }
-];= [
-  {
-    name: "Marcus T.",
-    city: "Little Rock",
-    rating: 5,
-    text: "SPMP Solutions transformed my driveway. It was covered in years of oil stains and algae — now it looks brand new. They were on time, professional, and the price was fair. I'll be calling them every year.",
-    service: "Driveway Cleaning",
-    date: "2025"
-  },
-  {
-    name: "Jennifer W.",
-    city: "Chenal Valley, Little Rock",
-    rating: 5,
-    text: "I had black streaks all over my roof and was worried I'd need a replacement. SPMP Solutions came out and soft-washed the entire roof — it looks incredible. Saved me thousands. Highly recommend.",
-    service: "Roof Cleaning",
-    date: "2025"
-  },
-  {
-    name: "David & Lisa R.",
-    city: "Benton, AR",
-    rating: 5,
-    text: "We hired them to paint our home's exterior and also pressure wash the deck. The attention to detail was impressive — they prepped everything properly and the finish looks perfect. Very professional crew.",
-    service: "Exterior Painting + Deck Cleaning",
-    date: "2025"
-  },
-  {
-    name: "Angela M.",
-    city: "North Little Rock",
-    rating: 5,
-    text: "Quick response, fair pricing, and excellent work. My house siding was covered in green algae and they made it look brand new. The team was respectful of my property and cleaned up after themselves.",
-    service: "House Washing",
-    date: "2025"
-  },
-  {
-    name: "Robert K.",
-    city: "Bryant, AR",
-    rating: 5,
-    text: "Used them for commercial pressure washing at my restaurant. They came early morning before we opened and did a thorough job on the parking lot and building exterior. Will definitely use them again.",
-    service: "Commercial Pressure Washing",
-    date: "2025"
-  },
-  {
-    name: "Tanya S.",
-    city: "Maumelle, AR",
-    rating: 5,
-    text: "Honest pricing, showed up when they said they would, and did excellent work. My gutters were completely clogged and they got everything flowing again. Straightforward and professional.",
-    service: "Gutter Cleaning",
-    date: "2025"
-  }
 ];
 
 export const STATS = [
