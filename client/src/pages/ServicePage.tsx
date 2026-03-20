@@ -3,11 +3,14 @@
 // Mobile-first: sidebar moves below content on mobile
 import { useEffect } from "react";
 import { Link, useParams } from "wouter";
-import { Phone, ArrowRight, CheckCircle, ChevronRight } from "lucide-react";
+import { Phone, ArrowRight, CheckCircle, ChevronRight , Paintbrush, Droplets, Home as HomeIcon, Building2, ShieldCheck, CircleDot, CloudRain, TreePine, Truck } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SERVICES, PHONE, PHONE_HREF, HERO_IMAGE } from "@/lib/data";
 import NotFound from "./NotFound";
+
+
+const SERVICE_ICONS: Record<string, any> = { Paintbrush, Droplets, Home: HomeIcon, Building2, ShieldCheck, CircleDot, CloudRain, TreePine, Truck };
 
 export default function ServicePage() {
   const { slug } = useParams<{ slug: string }>();
@@ -45,7 +48,7 @@ export default function ServicePage() {
             <span className="text-[#f2a900]">{service.shortName}</span>
           </div>
           <div className="flex items-center gap-3 mb-3">
-            <span className="text-3xl sm:text-4xl">{service.icon}</span>
+            {(() => { const I = SERVICE_ICONS[service.icon]; return I ? <I size={40} className="text-[#f2a900]" /> : null; })()}
             <span className="section-label">{service.tagline}</span>
           </div>
           <h1 className="font-display font-black text-[clamp(2.2rem,8vw,5rem)] text-white uppercase leading-none mb-5">

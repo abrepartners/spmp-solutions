@@ -5,7 +5,7 @@
 // Colors: Charcoal #0a1a2f | Burnt Orange #f2a900 | Cream #f9f9f9
 
 import { Link } from "wouter";
-import { Phone, ArrowRight, CheckCircle, Star, MapPin, ChevronRight } from "lucide-react";
+import { Phone, ArrowRight, CheckCircle, Star, MapPin, ChevronRight, Paintbrush, Droplets, Home as HomeIcon, Building2, ShieldCheck, CircleDot, CloudRain, TreePine, Truck } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import {
@@ -13,6 +13,10 @@ import {
   TESTIMONIALS, STATS, HERO_IMAGE, PAINTING_IMAGE,
   BEFORE_AFTER_IMAGE, TEAM_IMAGE
 } from "@/lib/data";
+
+const SERVICE_ICONS: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+  Paintbrush, Droplets, Home: HomeIcon, Building2, ShieldCheck, CircleDot, CloudRain, TreePine, Truck,
+};
 
 export default function Home() {
   return (
@@ -122,7 +126,7 @@ export default function Home() {
                 className="group relative bg-white border border-[#0a1a2f]/10 p-5 sm:p-6 hover:border-[#f2a900] hover:shadow-xl transition-all duration-300 active:scale-[0.99]"
                 style={{ transitionDelay: `${i * 40}ms` }}
               >
-                <div className="text-3xl mb-3">{service.icon}</div>
+                {(() => { const IC = SERVICE_ICONS[service.icon]; return IC ? <IC size={32} className="text-[#f2a900] mb-3" /> : null; })()}
                 <h3 className="font-display font-bold text-lg sm:text-xl text-[#0a1a2f] uppercase tracking-wide mb-2 group-hover:text-[#f2a900] transition-colors">
                   {service.name}
                 </h3>

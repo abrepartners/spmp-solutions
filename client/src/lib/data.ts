@@ -77,7 +77,7 @@ export const SERVICES: Service[] = [
       { question: "What brands of paint do you use?", answer: "We use premium paints from trusted brands like Sherwin-Williams and Benjamin Moore. We can also work with paint you've already purchased if preferred." },
       { question: "How long does exterior painting take?", answer: "Most residential exterior painting projects take 2–5 days depending on the size of the home, number of stories, and complexity of the trim work. We'll give you a timeline estimate with your quote." }
     ],
-    icon: "🎨"
+    icon: "Paintbrush"
   },
   {
     slug: "pressure-washing",
@@ -104,7 +104,7 @@ export const SERVICES: Service[] = [
       { question: "How often should I pressure wash my home?", answer: "Most homes benefit from professional pressure washing once a year, typically in spring. Homes with heavy tree cover or north-facing surfaces may need more frequent cleaning due to algae and mildew growth." },
       { question: "Is pressure washing safe for all surfaces?", answer: "Not all surfaces should be high-pressure washed. We use the appropriate technique for each surface — soft-washing for roofs and siding, and higher pressure for concrete and brick." }
     ],
-    icon: "💧"
+    icon: "Droplets"
   },
   {
     slug: "house-washing",
@@ -131,7 +131,7 @@ export const SERVICES: Service[] = [
       { question: "Will house washing remove the black streaks on my siding?", answer: "Yes. Those black streaks are typically caused by Gloeocapsa Magma, a type of algae. Our soft-wash system is specifically designed to eliminate it completely." },
       { question: "How long does house washing take?", answer: "Most residential homes take 2–4 hours depending on size. We'll give you a time estimate when we provide your free quote." }
     ],
-    icon: "🏠"
+    icon: "Home"
   },
   {
     slug: "commercial-pressure-washing",
@@ -158,7 +158,7 @@ export const SERVICES: Service[] = [
       { question: "Can you clean a parking lot or parking garage?", answer: "Yes. We have the equipment to handle large commercial surfaces including parking lots, parking garages, loading docks, and drive-throughs." },
       { question: "Do you work after business hours?", answer: "Yes. We can schedule commercial cleaning early morning, evenings, or weekends to minimize disruption to your business operations." }
     ],
-    icon: "🏢"
+    icon: "Building2"
   },
   {
     slug: "roof-cleaning",
@@ -185,7 +185,7 @@ export const SERVICES: Service[] = [
       { question: "Will the black streaks come back after roof cleaning?", answer: "They will eventually return, typically within 2–4 years depending on your environment. We recommend annual inspections and cleaning every 2–3 years to keep your roof looking its best." },
       { question: "Can you clean a roof with moss or lichen?", answer: "Yes. Moss and lichen require a slightly different treatment approach, but our soft-wash system is effective against all types of organic growth on roofs." }
     ],
-    icon: "🏚️"
+    icon: "ShieldCheck"
   },
   {
     slug: "driveway-concrete-cleaning",
@@ -212,7 +212,7 @@ export const SERVICES: Service[] = [
       { question: "How often should I have my driveway pressure washed?", answer: "We recommend annual driveway cleaning to prevent algae buildup and maintain your concrete's appearance. High-traffic areas may benefit from cleaning twice a year." },
       { question: "Do you clean stamped or decorative concrete?", answer: "Yes, but we use lower pressure settings for decorative concrete to protect the surface finish and any sealant. Let us know about any special surfaces when you call for your estimate." }
     ],
-    icon: "🛣️"
+    icon: "CircleDot"
   },
   {
     slug: "gutter-cleaning",
@@ -239,7 +239,7 @@ export const SERVICES: Service[] = [
       { question: "What happens if I don't clean my gutters?", answer: "Clogged gutters can cause water to overflow and damage your foundation, siding, fascia boards, and landscaping. They also create ideal nesting conditions for mosquitoes, birds, and rodents." },
       { question: "Do you clean gutters on multi-story homes?", answer: "Yes. We have the equipment and experience to safely clean gutters on two and three-story homes." }
     ],
-    icon: "🌧️"
+    icon: "CloudRain"
   },
   {
     slug: "deck-fence-cleaning",
@@ -266,7 +266,7 @@ export const SERVICES: Service[] = [
       { question: "Should I seal my deck after cleaning?", answer: "Yes. Cleaning opens the wood grain and is the ideal time to apply a stain or sealant. We recommend sealing within 48 hours of cleaning for best results." },
       { question: "Can you clean composite decking?", answer: "Yes. Composite decking requires lower pressure than wood. We have experience with all major composite deck brands and will use the manufacturer-recommended cleaning approach." }
     ],
-    icon: "🌲"
+    icon: "TreePine"
   },
   {
     slug: "junk-removal",
@@ -293,7 +293,7 @@ export const SERVICES: Service[] = [
       { question: "Do you offer estate cleanouts?", answer: "Yes. We provide sensitive, respectful estate cleanout services for families dealing with the loss of a loved one or downsizing." },
       { question: "Can you handle ongoing property maintenance?", answer: "Yes. We offer ongoing maintenance contracts for landlords and property managers who need regular exterior upkeep." }
     ],
-    icon: "🚛"
+    icon: "Truck"
   }
 ];
 

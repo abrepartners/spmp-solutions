@@ -3,10 +3,13 @@
 // Mobile-first responsive
 import { useEffect } from "react";
 import { Link } from "wouter";
-import { Phone, ArrowRight, CheckCircle } from "lucide-react";
+import { Phone, ArrowRight, CheckCircle , Star, Handshake, Clock, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { PHONE, PHONE_HREF, TEAM_IMAGE, PAINTING_IMAGE, STATS } from "@/lib/data";
+
+
+const ABOUT_ICONS: Record<string, any> = { Star, Handshake, Clock, Users };
 
 export default function About() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
@@ -104,13 +107,13 @@ export default function About() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {[
-              { title: "Quality", desc: "We use professional-grade equipment and premium materials on every job. No shortcuts.", icon: "⭐" },
-              { title: "Honesty", desc: "Transparent pricing, clear communication, and no hidden fees. Ever.", icon: "🤝" },
-              { title: "Reliability", desc: "We show up when we say we will and complete every job on schedule.", icon: "⏰" },
-              { title: "Community", desc: "We're proud to serve Little Rock and invest in the communities we work in.", icon: "🏘️" }
+              { title: "Quality", desc: "We use professional-grade equipment and premium materials on every job. No shortcuts.", icon: "Star" },
+              { title: "Honesty", desc: "Transparent pricing, clear communication, and no hidden fees. Ever.", icon: "Handshake" },
+              { title: "Reliability", desc: "We show up when we say we will and complete every job on schedule.", icon: "Clock" },
+              { title: "Community", desc: "We're proud to serve Little Rock and invest in the communities we work in.", icon: "Users" }
             ].map((value) => (
               <div key={value.title} className="bg-white/5 border border-white/10 p-5 sm:p-6 hover:border-[#f2a900] transition-colors">
-                <div className="text-3xl mb-3">{value.icon}</div>
+                {(() => { const I = ABOUT_ICONS[value.icon]; return I ? <I size={32} className="text-[#f2a900] mb-3" /> : null; })()}
                 <h3 className="font-display font-bold text-lg sm:text-xl text-white uppercase tracking-wide mb-2">
                   {value.title}
                 </h3>

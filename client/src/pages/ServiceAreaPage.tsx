@@ -3,11 +3,14 @@
 // Mobile-first: sidebar collapses above content on mobile
 import { useEffect } from "react";
 import { Link, useParams } from "wouter";
-import { Phone, ArrowRight, MapPin, CheckCircle, ChevronRight } from "lucide-react";
+import { Phone, ArrowRight, MapPin, CheckCircle, ChevronRight , Paintbrush, Droplets, Home as HomeIcon, Building2, ShieldCheck, CircleDot, CloudRain, TreePine, Truck } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SERVICE_AREAS, SERVICES, PHONE, PHONE_HREF, HERO_IMAGE } from "@/lib/data";
 import NotFound from "./NotFound";
+
+
+const SERVICE_ICONS: Record<string, any> = { Paintbrush, Droplets, Home: HomeIcon, Building2, ShieldCheck, CircleDot, CloudRain, TreePine, Truck };
 
 export default function ServiceAreaPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -122,7 +125,7 @@ export default function ServiceAreaPage() {
                     href={`/services/${service.slug}`}
                     className="group flex items-center gap-3 bg-white border border-[#0a1a2f]/10 p-3 sm:p-4 hover:border-[#f2a900] transition-all duration-200 active:scale-[0.99]"
                   >
-                    <span className="text-xl sm:text-2xl flex-shrink-0">{service.icon}</span>
+                    {(() => { const I = SERVICE_ICONS[service.icon]; return I ? <I size={24} className="text-[#f2a900] flex-shrink-0" /> : null; })()}
                     <div className="min-w-0">
                       <div className="font-display font-bold text-sm text-[#0a1a2f] uppercase tracking-wide group-hover:text-[#f2a900] transition-colors leading-tight">
                         {service.shortName}

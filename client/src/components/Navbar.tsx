@@ -4,8 +4,11 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { PHONE, PHONE_HREF } from "@/lib/data";
-import { Phone, Menu, X, ChevronDown, ChevronRight } from "lucide-react";
+import { Phone, Menu, X, ChevronDown, ChevronRight , Paintbrush, Droplets, Home as HomeIcon, Building2, ShieldCheck, CircleDot, CloudRain, TreePine, Truck } from "lucide-react";
 import { SERVICES } from "@/lib/data";
+
+
+const SERVICE_ICONS: Record<string, any> = { Paintbrush, Droplets, Home: HomeIcon, Building2, ShieldCheck, CircleDot, CloudRain, TreePine, Truck };
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -93,7 +96,7 @@ export default function Navbar() {
                       href={`/services/${service.slug}`}
                       className="flex items-center gap-3 px-4 py-2.5 text-white/70 hover:text-white hover:bg-white/5 transition-colors font-ui text-sm border-b border-white/5 last:border-0"
                     >
-                      <span className="text-base">{service.icon}</span>
+                      {(() => { const I = SERVICE_ICONS[service.icon]; return I ? <I size={16} className="text-[#f2a900]" /> : null; })()}
                       {service.shortName}
                     </Link>
                   ))}
@@ -192,7 +195,7 @@ export default function Navbar() {
                       href={`/services/${service.slug}`}
                       className="flex items-center gap-2 py-2.5 px-2 text-white/60 hover:text-[#f2a900] transition-colors font-ui text-sm rounded-sm hover:bg-white/5"
                     >
-                      <span className="text-base flex-shrink-0">{service.icon}</span>
+                      {(() => { const I = SERVICE_ICONS[service.icon]; return I ? <I size={16} className="text-[#f2a900] flex-shrink-0" /> : null; })()}
                       <span className="leading-tight">{service.shortName}</span>
                     </Link>
                   ))}
