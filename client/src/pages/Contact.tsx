@@ -25,17 +25,17 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F4F1EC]">
+    <div className="min-h-screen bg-[#f9f9f9]">
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-24 sm:pt-28 pb-10 sm:pb-14 bg-[#1A1A1A]">
+      <section className="pt-24 sm:pt-28 pb-10 sm:pb-14 bg-[#0a1a2f]">
         <div className="container">
           <span className="section-label">Get in Touch</span>
           <span className="accent-rule my-3"></span>
           <h1 className="font-display font-black text-[clamp(2.5rem,9vw,5rem)] text-white uppercase leading-none mb-4">
             Free Estimate.<br />
-            <span className="text-[#E85D04]">No Obligation.</span>
+            <span className="text-[#f2a900]">No Obligation.</span>
           </h1>
           <p className="font-body text-white/70 text-base sm:text-lg max-w-xl">
             Call, text, or fill out the form below. We'll get back to you quickly with a transparent, honest quote for your project.
@@ -50,12 +50,12 @@ export default function Contact() {
             {/* Form */}
             <div className="lg:col-span-3 order-2 lg:order-1">
               {submitted ? (
-                <div className="bg-white border border-[#1A1A1A]/10 p-8 sm:p-10 text-center">
-                  <CheckCircle size={48} className="text-[#E85D04] mx-auto mb-4" />
-                  <h2 className="font-display font-black text-2xl sm:text-3xl text-[#1A1A1A] uppercase mb-3">
+                <div className="bg-white border border-[#0a1a2f]/10 p-8 sm:p-10 text-center">
+                  <CheckCircle size={48} className="text-[#f2a900] mx-auto mb-4" />
+                  <h2 className="font-display font-black text-2xl sm:text-3xl text-[#0a1a2f] uppercase mb-3">
                     Message Received!
                   </h2>
-                  <p className="font-body text-[#1A1A1A]/70 mb-6 text-sm sm:text-base">
+                  <p className="font-body text-[#0a1a2f]/70 mb-6 text-sm sm:text-base">
                     Thank you for reaching out. We'll review your request and get back to you shortly with a free estimate. For faster service, call or text us directly.
                   </p>
                   <a href={PHONE_HREF} className="btn-cta inline-flex">
@@ -64,8 +64,8 @@ export default function Contact() {
                   </a>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="bg-white border border-[#1A1A1A]/10 p-6 sm:p-8">
-                  <h2 className="font-display font-black text-xl sm:text-2xl text-[#1A1A1A] uppercase mb-6">
+                <form onSubmit={handleSubmit} className="bg-white border border-[#0a1a2f]/10 p-6 sm:p-8">
+                  <h2 className="font-display font-black text-xl sm:text-2xl text-[#0a1a2f] uppercase mb-6">
                     Request a Free Estimate
                   </h2>
 
@@ -79,7 +79,7 @@ export default function Contact() {
                         value={form.name}
                         onChange={handleChange}
                         placeholder="John Smith"
-                        className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] placeholder-[#1A1A1A]/40 focus:outline-none focus:border-[#E85D04] transition-colors text-base"
+                        className="w-full border border-[#0a1a2f]/20 bg-[#f9f9f9] px-4 py-3 font-ui text-[#0a1a2f] placeholder-[#0a1a2f]/40 focus:outline-none focus:border-[#f2a900] transition-colors text-base"
                       />
                     </div>
                     <div>
@@ -91,7 +91,7 @@ export default function Contact() {
                         value={form.phone}
                         onChange={handleChange}
                         placeholder="501-555-0000"
-                        className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] placeholder-[#1A1A1A]/40 focus:outline-none focus:border-[#E85D04] transition-colors text-base"
+                        className="w-full border border-[#0a1a2f]/20 bg-[#f9f9f9] px-4 py-3 font-ui text-[#0a1a2f] placeholder-[#0a1a2f]/40 focus:outline-none focus:border-[#f2a900] transition-colors text-base"
                       />
                     </div>
                   </div>
@@ -104,7 +104,7 @@ export default function Contact() {
                       value={form.email}
                       onChange={handleChange}
                       placeholder="john@example.com"
-                      className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] placeholder-[#1A1A1A]/40 focus:outline-none focus:border-[#E85D04] transition-colors text-base"
+                      className="w-full border border-[#0a1a2f]/20 bg-[#f9f9f9] px-4 py-3 font-ui text-[#0a1a2f] placeholder-[#0a1a2f]/40 focus:outline-none focus:border-[#f2a900] transition-colors text-base"
                     />
                   </div>
 
@@ -116,7 +116,7 @@ export default function Contact() {
                         required
                         value={form.service}
                         onChange={handleChange}
-                        className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] focus:outline-none focus:border-[#E85D04] transition-colors text-base"
+                        className="w-full border border-[#0a1a2f]/20 bg-[#f9f9f9] px-4 py-3 font-ui text-[#0a1a2f] focus:outline-none focus:border-[#f2a900] transition-colors text-base"
                       >
                         <option value="">Select a service...</option>
                         {SERVICES.map((s) => (
@@ -131,7 +131,7 @@ export default function Contact() {
                         required
                         value={form.area}
                         onChange={handleChange}
-                        className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] focus:outline-none focus:border-[#E85D04] transition-colors text-base"
+                        className="w-full border border-[#0a1a2f]/20 bg-[#f9f9f9] px-4 py-3 font-ui text-[#0a1a2f] focus:outline-none focus:border-[#f2a900] transition-colors text-base"
                       >
                         <option value="">Select your city...</option>
                         {SERVICE_AREAS.map((a) => (
@@ -150,7 +150,7 @@ export default function Contact() {
                       onChange={handleChange}
                       rows={4}
                       placeholder="Tell us about your project — property size, what needs to be cleaned or painted, any specific concerns..."
-                      className="w-full border border-[#1A1A1A]/20 bg-[#F4F1EC] px-4 py-3 font-ui text-[#1A1A1A] placeholder-[#1A1A1A]/40 focus:outline-none focus:border-[#E85D04] transition-colors resize-none text-base"
+                      className="w-full border border-[#0a1a2f]/20 bg-[#f9f9f9] px-4 py-3 font-ui text-[#0a1a2f] placeholder-[#0a1a2f]/40 focus:outline-none focus:border-[#f2a900] transition-colors resize-none text-base"
                     />
                   </div>
 
@@ -159,7 +159,7 @@ export default function Contact() {
                     Send My Request
                   </button>
 
-                  <p className="font-ui text-[#1A1A1A]/40 text-xs text-center mt-4">
+                  <p className="font-ui text-[#0a1a2f]/40 text-xs text-center mt-4">
                     We typically respond within a few hours during business hours.
                   </p>
                 </form>
@@ -169,26 +169,26 @@ export default function Contact() {
             {/* Contact Info Sidebar */}
             <div className="lg:col-span-2 order-1 lg:order-2 space-y-4 sm:space-y-6">
               {/* Direct Contact */}
-              <div className="bg-[#1A1A1A] p-6 sm:p-8">
+              <div className="bg-[#0a1a2f] p-6 sm:p-8">
                 <h3 className="font-display font-black text-xl sm:text-2xl text-white uppercase mb-5">
                   Contact Us<br />
-                  <span className="text-[#E85D04]">Directly</span>
+                  <span className="text-[#f2a900]">Directly</span>
                 </h3>
                 <div className="space-y-4 sm:space-y-5">
                   <div className="flex items-start gap-3 sm:gap-4">
-                    <div className="w-10 h-10 bg-[#E85D04] rounded-sm flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-[#f2a900] rounded-sm flex items-center justify-center flex-shrink-0">
                       <Phone size={17} className="text-white" />
                     </div>
                     <div>
                       <p className="section-label mb-1">Phone / Text</p>
-                      <a href={PHONE_HREF} className="font-display font-bold text-lg sm:text-xl text-white hover:text-[#E85D04] transition-colors">
+                      <a href={PHONE_HREF} className="font-display font-bold text-lg sm:text-xl text-white hover:text-[#f2a900] transition-colors">
                         {PHONE}
                       </a>
                       <p className="font-ui text-white/50 text-xs mt-0.5">Call or text anytime</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 sm:gap-4">
-                    <div className="w-10 h-10 bg-[#E85D04] rounded-sm flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-[#f2a900] rounded-sm flex items-center justify-center flex-shrink-0">
                       <MapPin size={17} className="text-white" />
                     </div>
                     <div>
@@ -198,7 +198,7 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3 sm:gap-4">
-                    <div className="w-10 h-10 bg-[#E85D04] rounded-sm flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-[#f2a900] rounded-sm flex items-center justify-center flex-shrink-0">
                       <Clock size={17} className="text-white" />
                     </div>
                     <div>
@@ -212,8 +212,8 @@ export default function Contact() {
               </div>
 
               {/* What to Expect */}
-              <div className="bg-white border border-[#1A1A1A]/10 p-5 sm:p-6">
-                <h3 className="font-display font-bold text-base sm:text-lg text-[#1A1A1A] uppercase tracking-wide mb-4">
+              <div className="bg-white border border-[#0a1a2f]/10 p-5 sm:p-6">
+                <h3 className="font-display font-bold text-base sm:text-lg text-[#0a1a2f] uppercase tracking-wide mb-4">
                   What to Expect
                 </h3>
                 <div className="space-y-3">
@@ -225,17 +225,17 @@ export default function Contact() {
                     { step: "5", text: "Professional results, guaranteed" }
                   ].map((item) => (
                     <div key={item.step} className="flex items-start gap-3">
-                      <div className="w-6 h-6 bg-[#E85D04] rounded-sm flex items-center justify-center flex-shrink-0">
+                      <div className="w-6 h-6 bg-[#f2a900] rounded-sm flex items-center justify-center flex-shrink-0">
                         <span className="font-display font-black text-white text-xs">{item.step}</span>
                       </div>
-                      <p className="font-body text-[#1A1A1A]/70 text-sm">{item.text}</p>
+                      <p className="font-body text-[#0a1a2f]/70 text-sm">{item.text}</p>
                     </div>
                   ))}
                 </div>
               </div>
 
               {/* Trust Signals */}
-              <div className="bg-[#E85D04] p-5 sm:p-6">
+              <div className="bg-[#f2a900] p-5 sm:p-6">
                 <h3 className="font-display font-bold text-base sm:text-lg text-white uppercase tracking-wide mb-3">
                   Our Promise
                 </h3>

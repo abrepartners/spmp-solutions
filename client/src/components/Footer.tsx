@@ -9,9 +9,9 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#111111] text-white" itemScope itemType="https://schema.org/LocalBusiness">
+    <footer className="bg-[#060d1a] text-white" itemScope itemType="https://schema.org/LocalBusiness">
       {/* CTA Band */}
-      <div className="bg-[#E85D04] py-8 sm:py-10">
+      <div className="bg-[#f2a900] py-8 sm:py-10">
         <div className="container">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 sm:gap-6">
             <div>
@@ -24,7 +24,7 @@ export default function Footer() {
             </div>
             <a
               href={PHONE_HREF}
-              className="flex-shrink-0 flex items-center gap-2 sm:gap-3 bg-white text-[#E85D04] font-display font-black text-base sm:text-xl uppercase tracking-wider px-5 sm:px-8 py-3 sm:py-4 rounded-sm hover:bg-[#1A1A1A] hover:text-white transition-all duration-200 w-full sm:w-auto justify-center"
+              className="flex-shrink-0 flex items-center gap-2 sm:gap-3 bg-white text-[#f2a900] font-display font-black text-base sm:text-xl uppercase tracking-wider px-5 sm:px-8 py-3 sm:py-4 rounded-sm hover:bg-[#0a1a2f] hover:text-white transition-all duration-200 w-full sm:w-auto justify-center"
             >
               <Phone size={20} />
               {PHONE}
@@ -39,15 +39,15 @@ export default function Footer() {
           {/* Brand Column — full width on mobile */}
           <div className="col-span-2 sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-[#E85D04] rounded-sm flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 bg-[#f2a900] rounded-sm flex items-center justify-center flex-shrink-0">
                 <span className="font-display font-black text-white text-sm">SP</span>
               </div>
               <div>
                 <div className="font-display font-black text-white text-base leading-none uppercase tracking-wide">
-                  Samsonite P&M
+                  SPMP
                 </div>
-                <div className="text-[#E85D04] text-xs font-ui font-semibold tracking-widest uppercase">
-                  Pressure Washing
+                <div className="text-[#f2a900] text-xs font-ui font-semibold tracking-widest uppercase">
+                  Solutions
                 </div>
               </div>
             </div>
@@ -57,19 +57,19 @@ export default function Footer() {
             {/* NAP - Schema Friendly */}
             <div className="space-y-2.5">
               <div className="flex items-start gap-2">
-                <Phone size={14} className="text-[#E85D04] mt-0.5 flex-shrink-0" />
-                <a href={PHONE_HREF} className="font-ui text-white/80 hover:text-[#E85D04] transition-colors text-sm" itemProp="telephone">
+                <Phone size={14} className="text-[#f2a900] mt-0.5 flex-shrink-0" />
+                <a href={PHONE_HREF} className="font-ui text-white/80 hover:text-[#f2a900] transition-colors text-sm" itemProp="telephone">
                   {PHONE}
                 </a>
               </div>
               <div className="flex items-start gap-2">
-                <MapPin size={14} className="text-[#E85D04] mt-0.5 flex-shrink-0" />
+                <MapPin size={14} className="text-[#f2a900] mt-0.5 flex-shrink-0" />
                 <span className="font-ui text-white/60 text-sm" itemProp="areaServed">
                   Little Rock, AR &amp; Surrounding Areas
                 </span>
               </div>
               <div className="flex items-start gap-2">
-                <Clock size={14} className="text-[#E85D04] mt-0.5 flex-shrink-0" />
+                <Clock size={14} className="text-[#f2a900] mt-0.5 flex-shrink-0" />
                 <span className="font-ui text-white/60 text-sm">
                   Mon–Fri 7am–6pm · Sat 8am–4pm
                 </span>
@@ -81,16 +81,16 @@ export default function Footer() {
                 href="https://www.facebook.com/spmpsolutions"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 bg-white/10 hover:bg-[#E85D04] rounded-sm flex items-center justify-center transition-colors"
+                className="w-9 h-9 bg-white/10 hover:bg-[#f2a900] rounded-sm flex items-center justify-center transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={16} />
               </a>
               <a
-                href="https://www.google.com/maps/place/Samsonite+Painting+%26+More+Pressure+Washing"
+                href="https://www.google.com/maps/place/SPMP+Solutions"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 bg-white/10 hover:bg-[#E85D04] rounded-sm flex items-center justify-center transition-colors"
+                className="w-9 h-9 bg-white/10 hover:bg-[#f2a900] rounded-sm flex items-center justify-center transition-colors"
                 aria-label="Google Business Profile"
               >
                 <Star size={16} />
@@ -109,9 +109,9 @@ export default function Footer() {
                 <li key={service.slug}>
                   <Link
                     href={`/services/${service.slug}`}
-                    className="font-ui text-white/60 hover:text-[#E85D04] transition-colors text-xs sm:text-sm flex items-center gap-1.5"
+                    className="font-ui text-white/60 hover:text-[#f2a900] transition-colors text-xs sm:text-sm flex items-center gap-1.5"
                   >
-                    <span className="text-[#E85D04] text-xs flex-shrink-0">→</span>
+                    <span className="text-[#f2a900] text-xs flex-shrink-0">→</span>
                     <span className="leading-tight">{service.shortName}</span>
                   </Link>
                 </li>
@@ -130,9 +130,9 @@ export default function Footer() {
                 <li key={area.slug}>
                   <Link
                     href={`/service-areas/${area.slug}`}
-                    className="font-ui text-white/60 hover:text-[#E85D04] transition-colors text-xs sm:text-sm flex items-center gap-1.5"
+                    className="font-ui text-white/60 hover:text-[#f2a900] transition-colors text-xs sm:text-sm flex items-center gap-1.5"
                   >
-                    <span className="text-[#E85D04] text-xs flex-shrink-0">→</span>
+                    <span className="text-[#f2a900] text-xs flex-shrink-0">→</span>
                     <span className="leading-tight">{area.city}, {area.state}</span>
                   </Link>
                 </li>
@@ -157,9 +157,9 @@ export default function Footer() {
                 <li key={link.href + link.label}>
                   <Link
                     href={link.href}
-                    className="font-ui text-white/60 hover:text-[#E85D04] transition-colors text-xs sm:text-sm flex items-center gap-1.5"
+                    className="font-ui text-white/60 hover:text-[#f2a900] transition-colors text-xs sm:text-sm flex items-center gap-1.5"
                   >
-                    <span className="text-[#E85D04] text-xs flex-shrink-0">→</span>
+                    <span className="text-[#f2a900] text-xs flex-shrink-0">→</span>
                     {link.label}
                   </Link>
                 </li>
@@ -172,7 +172,7 @@ export default function Footer() {
               <ul className="space-y-1.5">
                 {["Locally Owned & Operated", "Free Estimates", "Satisfaction Guaranteed", "Residential & Commercial"].map((item) => (
                   <li key={item} className="flex items-center gap-2 text-white/60 text-xs font-ui">
-                    <span className="text-[#E85D04] flex-shrink-0">✓</span>
+                    <span className="text-[#f2a900] flex-shrink-0">✓</span>
                     {item}
                   </li>
                 ))}

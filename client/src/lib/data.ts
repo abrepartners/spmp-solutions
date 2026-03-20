@@ -35,7 +35,7 @@ export interface Testimonial {
 
 export const PHONE = "501-533-9213";
 export const PHONE_HREF = "tel:+15015339213";
-export const BUSINESS_NAME = "Samsonite Painting & More Pressure Washing";
+export const BUSINESS_NAME = "SPMP Solutions";
 export const SHORT_NAME = "SPMP Solutions";
 export const TAGLINE = "Protect. Restore. Enhance.";
 export const LOCATION = "Little Rock, AR";
@@ -363,7 +363,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Jennifer W.",
     city: "Chenal Valley, Little Rock",
     rating: 5,
-    text: "I had black streaks all over my roof and was worried I'd need a replacement. Samsonite came out and soft-washed the entire roof — it looks incredible. Saved me thousands. Highly recommend.",
+    text: "I had black streaks all over my roof and was worried I'd need a replacement. SPMP Solutions came out and soft-washed the entire roof — it looks incredible. Saved me thousands. Highly recommend.",
     service: "Roof Cleaning",
     date: "2025"
   },

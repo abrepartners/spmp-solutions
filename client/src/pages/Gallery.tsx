@@ -70,17 +70,17 @@ export default function Gallery() {
     : galleryItems.filter((item) => item.service === activeFilter);
 
   return (
-    <div className="min-h-screen bg-[#F4F1EC]">
+    <div className="min-h-screen bg-[#f9f9f9]">
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-24 sm:pt-28 pb-10 sm:pb-14 bg-[#1A1A1A]">
+      <section className="pt-24 sm:pt-28 pb-10 sm:pb-14 bg-[#0a1a2f]">
         <div className="container">
           <span className="section-label">Our Work</span>
           <span className="accent-rule my-3"></span>
           <h1 className="font-display font-black text-[clamp(2.5rem,9vw,5.5rem)] text-white uppercase leading-none mb-4">
             Real Results.<br />
-            <span className="text-[#E85D04]">Real Projects.</span>
+            <span className="text-[#f2a900]">Real Projects.</span>
           </h1>
           <p className="font-body text-white/70 text-base sm:text-lg max-w-xl">
             Browse our portfolio of completed projects across Little Rock and Central Arkansas. Every job tells the story of a property transformed.
@@ -99,8 +99,8 @@ export default function Gallery() {
                 onClick={() => setActiveFilter(filter)}
                 className={`font-display font-bold text-xs sm:text-sm uppercase tracking-wider px-3 sm:px-4 py-2 border transition-all duration-200 flex-shrink-0 ${
                   activeFilter === filter
-                    ? "bg-[#E85D04] border-[#E85D04] text-white"
-                    : "bg-white border-[#1A1A1A]/20 text-[#1A1A1A]/70 hover:border-[#E85D04] hover:text-[#E85D04]"
+                    ? "bg-[#f2a900] border-[#f2a900] text-white"
+                    : "bg-white border-[#0a1a2f]/20 text-[#0a1a2f]/70 hover:border-[#f2a900] hover:text-[#f2a900]"
                 }`}
               >
                 {filter}
@@ -111,31 +111,31 @@ export default function Gallery() {
           {/* Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {filtered.map((item) => (
-              <div key={item.id} className="group bg-white border border-[#1A1A1A]/10 overflow-hidden hover:shadow-xl transition-all duration-300">
+              <div key={item.id} className="group bg-white border border-[#0a1a2f]/10 overflow-hidden hover:shadow-xl transition-all duration-300">
                 <div className="relative overflow-hidden h-48 sm:h-56">
                   <img
                     src={item.image}
                     alt={`${item.title} in ${item.location}`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <span className="absolute top-3 left-3 bg-[#E85D04] text-white font-ui font-semibold text-xs uppercase tracking-wider px-2 py-1">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1a2f]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <span className="absolute top-3 left-3 bg-[#f2a900] text-white font-ui font-semibold text-xs uppercase tracking-wider px-2 py-1">
                     {item.service}
                   </span>
                 </div>
                 <div className="p-4 sm:p-5">
-                  <h3 className="font-display font-bold text-base sm:text-lg text-[#1A1A1A] uppercase tracking-wide mb-1">
+                  <h3 className="font-display font-bold text-base sm:text-lg text-[#0a1a2f] uppercase tracking-wide mb-1">
                     {item.title}
                   </h3>
-                  <p className="font-ui text-[#E85D04] text-xs uppercase tracking-wider mb-2">{item.location}</p>
-                  <p className="font-body text-[#1A1A1A]/60 text-sm leading-relaxed">{item.description}</p>
+                  <p className="font-ui text-[#f2a900] text-xs uppercase tracking-wider mb-2">{item.location}</p>
+                  <p className="font-body text-[#0a1a2f]/60 text-sm leading-relaxed">{item.description}</p>
                 </div>
               </div>
             ))}
           </div>
 
           {/* CTA */}
-          <div className="text-center mt-12 sm:mt-16 bg-[#1A1A1A] p-8 sm:p-10">
+          <div className="text-center mt-12 sm:mt-16 bg-[#0a1a2f] p-8 sm:p-10">
             <h2 className="font-display font-black text-[clamp(2rem,7vw,3.5rem)] text-white uppercase leading-none mb-4">
               Want Results Like These?
             </h2>

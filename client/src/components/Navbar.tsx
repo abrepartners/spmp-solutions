@@ -40,22 +40,22 @@ export default function Navbar() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-[#1A1A1A] shadow-2xl" : "bg-[#1A1A1A]/95 backdrop-blur-sm"
+          scrolled ? "bg-[#0a1a2f] shadow-2xl" : "bg-[#0a1a2f]/95 backdrop-blur-sm"
         }`}
       >
         <div className="container">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2.5 group flex-shrink-0">
-              <div className="w-9 h-9 bg-[#E85D04] rounded-sm flex items-center justify-center flex-shrink-0">
+              <div className="w-9 h-9 bg-[#f2a900] rounded-sm flex items-center justify-center flex-shrink-0">
                 <span className="font-display font-black text-white text-sm tracking-tight">SP</span>
               </div>
               <div>
                 <div className="font-display font-black text-white text-base leading-none tracking-wide uppercase">
-                  Samsonite P&M
+                  SPMP
                 </div>
-                <div className="text-[#E85D04] text-[10px] font-ui font-semibold tracking-widest uppercase">
-                  Pressure Washing
+                <div className="text-[#f2a900] text-[10px] font-ui font-semibold tracking-widest uppercase">
+                  Solutions
                 </div>
               </div>
             </Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
               <Link
                 href="/"
                 className={`font-ui font-semibold text-sm uppercase tracking-wider px-4 py-2 transition-colors ${
-                  location === "/" ? "text-[#E85D04]" : "text-white/80 hover:text-white"
+                  location === "/" ? "text-[#f2a900]" : "text-white/80 hover:text-white"
                 }`}
               >
                 Home
@@ -81,7 +81,7 @@ export default function Navbar() {
                   Services <ChevronDown size={14} className={`transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`} />
                 </button>
                 <div
-                  className={`absolute top-full left-0 w-64 bg-[#1A1A1A] border border-white/10 shadow-2xl transition-all duration-200 ${
+                  className={`absolute top-full left-0 w-64 bg-[#0a1a2f] border border-white/10 shadow-2xl transition-all duration-200 ${
                     servicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                   }`}
                   onMouseEnter={() => setServicesOpen(true)}
@@ -103,7 +103,7 @@ export default function Navbar() {
               <Link
                 href="/about"
                 className={`font-ui font-semibold text-sm uppercase tracking-wider px-4 py-2 transition-colors ${
-                  location === "/about" ? "text-[#E85D04]" : "text-white/80 hover:text-white"
+                  location === "/about" ? "text-[#f2a900]" : "text-white/80 hover:text-white"
                 }`}
               >
                 About
@@ -111,7 +111,7 @@ export default function Navbar() {
               <Link
                 href="/gallery"
                 className={`font-ui font-semibold text-sm uppercase tracking-wider px-4 py-2 transition-colors ${
-                  location === "/gallery" ? "text-[#E85D04]" : "text-white/80 hover:text-white"
+                  location === "/gallery" ? "text-[#f2a900]" : "text-white/80 hover:text-white"
                 }`}
               >
                 Gallery
@@ -119,7 +119,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 className={`font-ui font-semibold text-sm uppercase tracking-wider px-4 py-2 transition-colors ${
-                  location === "/contact" ? "text-[#E85D04]" : "text-white/80 hover:text-white"
+                  location === "/contact" ? "text-[#f2a900]" : "text-white/80 hover:text-white"
                 }`}
               >
                 Contact
@@ -130,7 +130,7 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center">
               <a
                 href={PHONE_HREF}
-                className="flex items-center gap-2 bg-[#E85D04] hover:bg-[#D04E00] text-white font-display font-bold text-base uppercase tracking-wider px-5 py-2.5 rounded-sm transition-all duration-200 hover:-translate-y-0.5"
+                className="flex items-center gap-2 bg-[#f2a900] hover:bg-[#d99a00] text-white font-display font-bold text-base uppercase tracking-wider px-5 py-2.5 rounded-sm transition-all duration-200 hover:-translate-y-0.5"
               >
                 <Phone size={16} />
                 {PHONE}
@@ -141,7 +141,7 @@ export default function Navbar() {
             <div className="flex items-center gap-2 lg:hidden">
               <a
                 href={PHONE_HREF}
-                className="flex items-center justify-center w-10 h-10 bg-[#E85D04] rounded-sm text-white"
+                className="flex items-center justify-center w-10 h-10 bg-[#f2a900] rounded-sm text-white"
                 aria-label="Call us"
               >
                 <Phone size={18} />
@@ -160,7 +160,7 @@ export default function Navbar() {
 
         {/* Mobile Menu — full overlay */}
         <div
-          className={`lg:hidden fixed inset-0 top-16 bg-[#111111] z-40 transition-all duration-300 overflow-y-auto ${
+          className={`lg:hidden fixed inset-0 top-16 bg-[#060d1a] z-40 transition-all duration-300 overflow-y-auto ${
             mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
         >
@@ -169,7 +169,7 @@ export default function Navbar() {
             <Link
               href="/"
               className={`font-display font-bold text-2xl uppercase tracking-wider py-4 border-b border-white/10 transition-colors ${
-                location === "/" ? "text-[#E85D04]" : "text-white"
+                location === "/" ? "text-[#f2a900]" : "text-white"
               }`}
             >
               Home
@@ -190,7 +190,7 @@ export default function Navbar() {
                     <Link
                       key={service.slug}
                       href={`/services/${service.slug}`}
-                      className="flex items-center gap-2 py-2.5 px-2 text-white/60 hover:text-[#E85D04] transition-colors font-ui text-sm rounded-sm hover:bg-white/5"
+                      className="flex items-center gap-2 py-2.5 px-2 text-white/60 hover:text-[#f2a900] transition-colors font-ui text-sm rounded-sm hover:bg-white/5"
                     >
                       <span className="text-base flex-shrink-0">{service.icon}</span>
                       <span className="leading-tight">{service.shortName}</span>
@@ -203,7 +203,7 @@ export default function Navbar() {
             <Link
               href="/about"
               className={`font-display font-bold text-2xl uppercase tracking-wider py-4 border-b border-white/10 transition-colors ${
-                location === "/about" ? "text-[#E85D04]" : "text-white"
+                location === "/about" ? "text-[#f2a900]" : "text-white"
               }`}
             >
               About
@@ -211,7 +211,7 @@ export default function Navbar() {
             <Link
               href="/gallery"
               className={`font-display font-bold text-2xl uppercase tracking-wider py-4 border-b border-white/10 transition-colors ${
-                location === "/gallery" ? "text-[#E85D04]" : "text-white"
+                location === "/gallery" ? "text-[#f2a900]" : "text-white"
               }`}
             >
               Gallery
@@ -219,7 +219,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               className={`font-display font-bold text-2xl uppercase tracking-wider py-4 border-b border-white/10 transition-colors ${
-                location === "/contact" ? "text-[#E85D04]" : "text-white"
+                location === "/contact" ? "text-[#f2a900]" : "text-white"
               }`}
             >
               Contact
@@ -255,7 +255,7 @@ export default function Navbar() {
       </header>
 
       {/* Sticky bottom CTA for mobile — above any page content */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-[#E85D04] shadow-2xl safe-area-bottom">
+      <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-[#f2a900] shadow-2xl safe-area-bottom">
         <a
           href={PHONE_HREF}
           className="flex items-center justify-center gap-3 py-4 text-white font-display font-bold text-lg uppercase tracking-wider"
